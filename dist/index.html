@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Todo List with Vanilla JS</title>
+<script defer src="runtime.js"></script><script defer src="bundle.js"></script><link href="bundle.css" rel="stylesheet"></head>
+<body>
+	<main class="app">
+		<section class="create-todo">
+			<h3>CREATE A TODO</h3>
+			<form id="new-todo-form">
+				<h4>What's on your todo today?</h4>
+				<input 
+					type="text" 
+					placeholder="Please type your todo here..."
+					name="content"
+					id="content" />
+				<input class="addInput" type="submit" value="Add todo" />
+			</form>
+		</section>
+	
+		<section class="todo-list">
+			<h3>TODO LIST</h3>
+			<div class="list" id="todo-list"></div>
+			<button class="deleteAll">Clear All Completed</button>
+		</section>
+
+	</main>
+</html>
